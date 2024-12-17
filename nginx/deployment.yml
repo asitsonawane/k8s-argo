@@ -1,23 +1,23 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: nginx-dev
-#   namespace: nginx-dev 
-# spec:
-#   selector:
-#     matchLabels:
-#       app: nginx-dev
-#   template:
-#     metadata:
-#       labels:
-#         app: nginx-dev
-#     spec:
-#       containers:
-#       - name: nginx-dev
-#         image: nginx:latest
-#         resources:
-#           limits:
-#             memory: "128Mi"
-#             cpu: "500m"
-#         ports:
-#         - containerPort: 80
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-dev
+  namespace: nginx-dev 
+spec:
+  selector:
+    matchLabels:
+      app: nginx-dev
+  template:
+    metadata:
+      labels:
+        app: nginx-dev
+    spec:
+      containers:
+      - name: nginx-dev
+        image: nginx:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
