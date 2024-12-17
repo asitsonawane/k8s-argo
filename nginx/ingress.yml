@@ -4,6 +4,7 @@ metadata:
   name: nginx-dev
   labels:
     name: nginx-dev
+  namespace: nginx-dev 
 spec:
   rules:
   - host: k8s.tracknmanage.com
