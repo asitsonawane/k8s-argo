@@ -1,19 +1,19 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: nginx-dev
-  labels:
-    name: nginx-dev
-  namespace: nginx-dev 
-spec:
-  rules:
-  - host: k8s.tracknmanage.com
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: nginx-dev
-            port: 
-              number: 80
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: nginx-dev
+#   labels:
+#     name: nginx-dev
+#   namespace: nginx-dev 
+# spec:
+#   rules:
+#   - host: k8s.tracknmanage.com
+#     http:
+#       paths:
+#       - pathType: Prefix
+#         path: "/"
+#         backend:
+#           service:
+#             name: nginx-dev
+#             port: 
+#               number: 80
